@@ -1,0 +1,201 @@
+[
+    {
+        "actionName": "vuser_init",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: Webtours",
+                "infFile": "t1.inf",
+                "time": 1594651428925
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t2.inf",
+                "time": 1594651429003
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t3.inf",
+                "time": 1594651434206
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t4.inf",
+                "time": 1594651434275
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "01.Login_open_field",
+                "rawStartTime": 1594651428001,
+                "rawEndTime": 1594651428936,
+                "thinkTime": 0.0,
+                "wastedTime": 0.23374009132385255
+            },
+            {
+                "transactionName": "02.Login_fillin_fiels",
+                "rawStartTime": 1594651434008,
+                "rawEndTime": 1594651434208,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0070302486419677738
+            }
+        ]
+    },
+    {
+        "actionName": "Create_ticket",
+        "steps": [
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: Search Flights Button",
+                "infFile": "t5.inf",
+                "time": 1594651439455
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t6.inf",
+                "time": 1594651439495
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: reservations.pl",
+                "infFile": "t7.inf",
+                "time": 1594651444594
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t8.inf",
+                "time": 1594651444657
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Submit Data: reservations.pl_2",
+                "infFile": "t9.inf",
+                "time": 1594651449875
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t10.inf",
+                "time": 1594651449916
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Submit Data: reservations.pl_3",
+                "infFile": "t11.inf",
+                "time": 1594651455021
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t12.inf",
+                "time": 1594651455068
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "03.OpenPage_ticket_FindFlight",
+                "rawStartTime": 1594651439287,
+                "rawEndTime": 1594651439457,
+                "thinkTime": 0.0,
+                "wastedTime": 0.009854555130004883
+            },
+            {
+                "transactionName": "04.Create_ticket_FindFlight",
+                "rawStartTime": 1594651444500,
+                "rawEndTime": 1594651444596,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004595041275024414
+            },
+            {
+                "transactionName": "05.Create_ticket_ChooseCost",
+                "rawStartTime": 1594651449662,
+                "rawEndTime": 1594651449876,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004070281982421875
+            },
+            {
+                "transactionName": "06.Create_ticket_PaymentDetail",
+                "rawStartTime": 1594651454922,
+                "rawEndTime": 1594651455023,
+                "thinkTime": 0.0,
+                "wastedTime": 0.005341529846191406
+            }
+        ]
+    },
+    {
+        "actionName": "Delete_ALL_ticket",
+        "steps": [
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t13.inf",
+                "time": 1594651460363
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t14.inf",
+                "time": 1594651460402
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Submit Data: itinerary.pl",
+                "infFile": "t15.inf",
+                "time": 1594651465505
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t16.inf",
+                "time": 1594651465539
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "09.GoTo_page_Itinerary",
+                "rawStartTime": 1594651460082,
+                "rawEndTime": 1594651460366,
+                "thinkTime": 0.0,
+                "wastedTime": 0.009808540344238282
+            },
+            {
+                "transactionName": "10.Delete_ALL_tickets",
+                "rawStartTime": 1594651465408,
+                "rawEndTime": 1594651465507,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0039424896240234379
+            }
+        ]
+    },
+    {
+        "actionName": "vuser_end",
+        "steps": [
+            {
+                "stepId": "STEP17",
+                "stepName": "Url: SignOff Button",
+                "infFile": "t17.inf",
+                "time": 1594651470740
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t18.inf",
+                "time": 1594651470785
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "11.Log_out",
+                "rawStartTime": 1594651470554,
+                "rawEndTime": 1594651470741,
+                "thinkTime": 0.0,
+                "wastedTime": 0.006220817565917969
+            }
+        ]
+    }
+]

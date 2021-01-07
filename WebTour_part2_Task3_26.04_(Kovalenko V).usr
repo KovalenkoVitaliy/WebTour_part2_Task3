@@ -1,0 +1,75 @@
+[General]
+Type=Multi
+DefaultCfg=default.cfg
+ParameterFile=WebTour_part2_Task3_26.prm
+GlobalParameterFile=
+NewFunctionHeader=1
+RunType=cci
+ActionLogicExt=action_logic
+LastActiveAction=Action
+MajorVersion=2020
+MinorVersion=0
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+AdditionalTypes=QTWeb
+DevelopTool=Vugen
+LastModifyVer=2020.0.0.0
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+LastCodeGenerationVer=12.60.0.971
+DisableRegenerate=0
+Encoding=ANSI
+Description=
+ScriptLocale=ru-RU
+DFERebrandFlag=Done
+[Actions]
+vuser_init=vuser_init.c
+Create_ticket=Create_ticket.c
+Delete_1_ticket=Delete_1_ticket.c
+Delete_ALL_ticket=Delete_ALL_ticket.c
+Action3=Action3.c
+vuser_end=vuser_end.c
+[RunLogicFiles]
+Default Profile=default.usp
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[ExtraFiles]
+globals.h=
+[Modified Actions]
+vuser_init=1
+Create_ticket=1
+Delete_1_ticket=1
+Delete_ALL_ticket=1
+Action3=1
+vuser_end=1
+[Recorded Actions]
+vuser_init=0
+Create_ticket=1
+Delete_1_ticket=0
+Delete_ALL_ticket=0
+Action3=0
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Create_ticket=1
+Delete_1_ticket=1
+Delete_ALL_ticket=1
+Action3=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Create_ticket=cci
+Delete_1_ticket=cci
+Delete_ALL_ticket=cci
+Action3=cci
+vuser_end=cci
+[TransactionsOrder]
+Order=
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=result1
+ActiveRunName=result1
